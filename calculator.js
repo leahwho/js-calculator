@@ -118,20 +118,24 @@ const calculateMath = function(input) {
       case 'add':
       case '+':
         let answerAdd = input.num1  + input.num2;
+        console.log('We\'re doing some addition!');
         return console.log(`Here is your answer: ${input.num1} + ${input.num2} = ${answerAdd}`);
       case 'subtract':
       case '-':
         let answerSub = input.num1 - input.num2;
+        console.log('Subtraction here we come.');
         return console.log(`Here is your answer: ${input.num1} - ${input.num2} = ${answerSub}` );
       case 'multiply':
       case '*':
         let answerMult = input.num1 * input.num2;
+        console.log('Multiplication station!');
         return console.log(`Here is your answer: ${input.num1} * ${input.num2} = ${answerMult}` );
       case 'divide':
       case '/':
-        let answerDiv = divideNums(input.num1, input.num2)
+        let answerDiv = divideNums(input.num1, input.num2);
         if (answerDiv) {
-        return console.log(`Here is your answer: ${input.num1} / ${input.num2} = ${answerDiv}`);
+          console.log('Division\'s like fission!');
+          return console.log(`Here is your answer: ${input.num1} / ${input.num2} = ${answerDiv}`);
         };
     };
   };
@@ -145,7 +149,7 @@ console.log(calculateMath(exampleMultiplicationInput));
 console.log(calculateMath(exampleMultiplicationInput2));
 console.log(calculateMath(exampleDivisionInput));
 console.log(calculateMath(exampleDivisionInput2));
-console.log(calculateMath(exampleZeroDivisionInput))
+console.log(calculateMath(exampleZeroDivisionInput));
 console.log(calculateMath(exampleBadFirstNum));
 console.log(calculateMath(exampleBadSecondNum));
 console.log(calculateMath(exampleNullFirstNum));
