@@ -117,22 +117,22 @@ const calculateMath = function(input) {
     switch(input.operation) {
       case 'add':
       case '+':
-        let answerAdd = input.num1  + input.num2;
+        const answerAdd = input.num1  + input.num2;
         console.log('We\'re doing some addition!');
         return console.log(`Here is your answer: ${input.num1} + ${input.num2} = ${answerAdd}`);
       case 'subtract':
       case '-':
-        let answerSub = input.num1 - input.num2;
+        const answerSub = input.num1 - input.num2;
         console.log('Subtraction here we come.');
         return console.log(`Here is your answer: ${input.num1} - ${input.num2} = ${answerSub}` );
       case 'multiply':
       case '*':
-        let answerMult = input.num1 * input.num2;
+        const answerMult = input.num1 * input.num2;
         console.log('Multiplication station!');
         return console.log(`Here is your answer: ${input.num1} * ${input.num2} = ${answerMult}` );
       case 'divide':
       case '/':
-        let answerDiv = divideNums(input.num1, input.num2);
+        const answerDiv = divideNums(input.num1, input.num2);
         if (answerDiv) {
           console.log('Division\'s like fission!');
           return console.log(`Here is your answer: ${input.num1} / ${input.num2} = ${answerDiv}`);
@@ -152,6 +152,7 @@ console.log(calculateMath(exampleDivisionInput2));
 console.log(calculateMath(exampleZeroDivisionInput));
 console.log(calculateMath(exampleBadFirstNum));
 console.log(calculateMath(exampleBadSecondNum));
+console.log(calculateMath(exampleBadOperator));
 console.log(calculateMath(exampleNullFirstNum));
 console.log(calculateMath(exampleNullSecondNum));
 console.log(calculateMath(exampleNullOperator));
